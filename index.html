@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //перше завдання
+        let resultString = " ";
+        for (let i = 10; i <= 20; i++)
+        {
+            resultString += i + ( i == 20 ? ``: `,`)
+        }
+        console.log(resultString)
+    </script>
+    <script>
+        //друге завдання
+        let firstResult = ``;
+        for ( let i = 10; i <= 20; i++)
+        {
+          firstResult += i * i + ` `
+        }
+        console.log(firstResult)
+    </script>
+    <script>
+        //третє завдання
+        let secondResult = ``;
+        for ( let i = 1; i <= 10; i++)
+        {
+            secondResult += i * 7 + ` `
+        }
+        console.log(secondResult)
+    </script>
+    <script>
+        //четверте задання
+        let sum = 0;
+        for( let i = 1;i <= 15; i++) { sum += i}
+            console.log (sum)
+    </script>
+    <script>
+        //п'яте завдання
+        let number = 1;
+        for ( let i = 15; i <= 35; i++)
+        { number *= i}
+        console.log(number)
+    </script>
+    <script>
+        //шосте завдання
+        let secondSum = 0;
+        let secondNumber = 0;
+        for ( let i = 1; i <= 500; i++)
+        { secondSum += i}
+        secondNumber = secondSum / 500;
+        console.log(secondNumber)
+   </script>
+   <script>
+    //сьоме завдання
+    let thirdSum = 0;
+    let thirdNumber = 0;
+    for( let i = 30; i <= 80; i += 2)
+    {thirdSum += i}
+    console.log(thirdSum)
+   </script>
+   <script>
+    //восьме завдання
+    let fourthNumber = ``;
+    for( let i = 100; i <= 200; i++)
+    { 
+     if( i % 3 === 0)
+    { fourthNumber += i + ` `}
+    continue }
+    console.log(fourthNumber)
+     </script> 
+     <script>
+        //дев'яте завдання
+        let div = ``;
+        let naturNamber = prompt (`Input the number`);
+        for ( let n = 1; n <= naturNamber; n++)
+        {if ( naturNamber % n === 0)
+            { div += n + ` `}
+        continue};
+        console.log (div)
+        //десяте завдання
+            let nextDiv = ``;
+            let nDiv = 0;
+            for ( let n = 1; n <= naturNamber; n++)
+            { if ( naturNamber % n === 0)
+                { nextDiv += n + `; `;
+                nDiv++}
+                continue
+            };
+            console.log(`дільники числа ${naturNamber} : ${nextDiv}`)
+            console.log(`кількість дільників становить ${nDiv}`)
+            //одинадцяте завдання
+            let nextSum = 0;
+          for ( let j = 1; j <= naturNamber; j++)
+            { if ( naturNamber % j === 0)
+                {   
+                    nextSum += j;//сума дільників
+                }
+                continue}
+            console.log(`сума дільників становить ${nextSum}`)
+            </script>
+            <script>
+                //дванадцяте завдання
+                let multNumber = ``;
+                for(let iNumber = 0; iNumber <= 9;)
+                { iNumber++;
+                for(let i = 1; i <= 10; i++)
+                {    
+                    multNumber = i * iNumber ;
+                    
+                console.log(` ${i} * ${iNumber} = ${multNumber}`);
+                        }}
+            </script>
+            
+</body>
+</html>
